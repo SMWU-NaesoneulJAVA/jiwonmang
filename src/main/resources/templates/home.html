@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Home</title>
+</head>
+<body>
+    <h1>Welcome, <span th:text="${user.name}">Name</span>!</h1>
+    <img th:src="${user.profileImageUrl}" alt="Profile Image"/>
+    <p>Nickname: <span th:text="${user.nickname}">Nickname</span></p>
+    <a href="/edit">Edit Profile</a>
+</body>
+</html>

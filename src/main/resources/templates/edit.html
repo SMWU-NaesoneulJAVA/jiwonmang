@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Edit Profile</title>
+</head>
+<body>
+    <h1>Edit Profile</h1>
+    <form action="/edit" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" th:value="${user.name}"/>
+        <br/>
+        <label for="profileImageUrl">Profile Image URL:</label>
+        <input type="text" id="profileImageUrl" name="profileImageUrl" th:value="${user.profileImageUrl}"/>
+        <br/>
+        <label for="nickname">Nickname:</label>
+        <input type="text" id="nickname" name="nickname" th:value="${user.nickname}"/>
+        <br/>
+        <button type="submit">Save</button>
+    </form>
+</body>
+</html>
